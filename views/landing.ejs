@@ -1,0 +1,54 @@
+<%include ./partials/header%>
+<header>
+        <div class="hero-text-box">
+                <h1>Welcome to portal of endless opportunities.<br>&nbsp</h1>
+                <% if(!currentUser){ %>
+                <a href="/register" class="btn btn-sm btn-primary">Register Now </a>
+                <% } %>
+                <a href="#About" class="btn btn-outline-info btn-sm">About Us </a>
+            </div>
+</header>
+<section id="features">
+                <div class="row text-center">
+                    <h2 class="m-auto mb-3">What is a Startup ???</h2>
+                    <p class="features-text mt-3">A startup or start up is a company or project initiated by an entrepreneur to seek, effectively develop, and validate a scalable business model.</p>
+                </div>
+    
+                <div class="row ">
+    
+                    <div class="col-md-3 box text-center">
+                                <i class="fas fa-bullhorn icon-sm"></i>
+                            <h3>Product-Market Fit</h3>
+                                                        <p>Selling a product or service customers actually want is important. The market must be willing and able to pay for what you're selling. Seems straightforward, and obvious, yet many startups struggle with defining their product-market fit.</p>
+                        </div>
+                        <div class="col-md-3 box text-center">
+                                        <i class="fas fa-chart-line icon-sm"></i>
+                            <h3>Start With Small Test Markets</h3>
+                            <p>You need a product that covers a large market share, or you'll never be able to scale into a large company. However, start small to fine-tune your process and ultimately get there
+                                </p>
+                        </div>
+                        <div class="col-md-3 box text-center">
+                                        <i class="fas fa-cubes icon-sm"></i>
+                            <h3>Passionate And Innovative</h3>
+                            <p>Successful startups are based on disruptive ideas. More than a buzzword, disruption is changing the status quo in an existing marketplace.</p>
+                        </div>
+                        <div class="col-md-3 box text-center">
+                                        <i class="fas fa-comments icon-sm "></i>
+                            <h3>Take Feedback Seriously</h3>
+                            <p>Another quality of successful startups is their ability to adjust to feedback. Whether the feedback comes from investors, advisors, mentors, or customers,</p>
+                        </div>
+               
+                </div>
+               
+                
+                
+            </section>
+            <section id="About" >
+                        <div class="row text-center">
+                            <h2 class="m-auto mb-3">About Startup Punjab</h2>
+                            <p class="features-text mt-3 text-left">Startup India is a flagship initiative of the Government of India, intended to catalyse startup culture and build a strong and inclusive ecosystem for innovation and entrepreneurship in India.</p>
+                        <p class="text-left">Launched on 1st September, 2019, the Startup India Initiative has rolled out several programs with the objective of supporting entrepreneurs, building a robust startup ecosystem and transforming India into a country of job creators instead of job seekers. These programs are managed by a dedicated Startup India Team, which reports to the Department for Industrial Policy and Promotion (DPIIT).</p>
+                        </div>
+                </section>
+<% include ./partials/footer %>
+

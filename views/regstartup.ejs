@@ -1,0 +1,92 @@
+<% include ./partials/header %>
+
+
+    <div class="container">
+            <div class="row form-box mt-">
+                    <div class="col-md-4 form-left"></div>
+                    <div class="col-md-8 text-center">
+                                    
+                                            <h1 class="form-title">Register Now</h1>
+                                        <form class="text-center" method="POST" action="/regstartup">
+                                            <div class="form-row justify-content-center">
+                                              <div class="form-group col-md-10">
+                                                <input type="text" class="form-control" id="inputName" placeholder="Company Name" name="company[cname]" required>
+                                              </div>
+                                              
+                                            </div>
+                                            <div class="form-row justify-content-center">
+                                                <div class="form-group col-md-10">
+                                                    <input type="text" class="form-control" id="Email" placeholder="Owner Name" name="company[oname]" required>
+                                                  </div>
+                                                </div>
+                                                <div class="form-row justify-content-center">
+
+                                                    <div class="form-group col-md-10 ">
+                                                            <select class="form-control" id="select" name="company[sector]" required>
+                                                                <option selected hidden>Choose Your Area Of Interest</option>
+                                                              <option  hidden selected>Select Area of Interest</option>
+                                                              <option value="Business product and Service">Business product and Service</option>
+                                                              <option value="Consumer product and Service">Consumer product and Service</option>
+                                                              <option value="Construction">Construction</option>
+                                                              <option value="Financial Services">Financial Services</option>
+                                                              <option value="Govt. Services">Govt. Services</option>
+                                                              <option value="Health">Health</option>
+                                                              <option value="Real Estate">Real Estate</option>
+                                                              <option value="Retail">Retail</option>
+                                                              <option value="Security">Security</option>
+                                                                                                                          </select>
+                                                          </div>
+                                                </div>
+                                            <div class="form-row justify-content-center">
+                                                <div class="form-group col-md-10">
+                                                    <input type="text" class="form-control" id="" placeholder="gstin " name="company[gstin]" >
+                                                  </div>
+                                                </div>
+                                            <div class="form-row justify-content-center">
+                                                <div class="form-group col-md-10">
+                                                    <input type="date" class="form-control" name="company[date]" required>
+                                                  </div>
+                                                </div>
+                                                <div class="form-row justify-content-center">
+                                    
+                                                    <div class="form-group col-md-10 ">
+                                                          <select class="form-control" id="select" name="company[location]" required>
+                                                              <option selected hidden>Choose Your District</option>
+                                                            <option value="patiala">Amritsar</option>
+                                                            <option>Barnala</option>
+                                                            <option>Bathinda</option>
+                                                            <option>Faridkot</option>
+                                                            <option>Fatehgarh Sahib</option>
+                                                            <option>Firozpur</option>
+                                                            <option>Fazilka</option>
+                                                            <option>Gurdaspur</option>
+                                                            <option>Hoshiarpur</option>
+                                                            <option>Jalandhar</option>
+                                                            <option>Kapurthala</option>
+                                                            <option>Ludhiana</option>
+                                                            <option>Mansa</option>
+                                                            <option>Moga</option>
+                                                            <option>Shri Muktsar Sahib</option>
+                                                            <option>Pathankot</option>
+                                                            <option>SAS Nagar</option>
+                                                            <option>Sangrur</option>
+                                                            <option>Shahid Bhagat Singh Nagar</option>
+                                                            <option>Taran Taran</option>
+                                                            
+                                                          </select>
+                                                        </div>
+                                                </div>
+                                           
+                                            
+                                            
+                                            <button type="submit" class="btn btn-primary mb-2">Sign in</button>
+                                          </form>
+                                    
+                                
+                    </div>
+                </div>
+    
+</div>
+
+
+<%include ./partials/footer%>

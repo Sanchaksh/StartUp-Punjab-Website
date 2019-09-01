@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Startup App</title>
+    <script src="https://kit.fontawesome.com/3c1f38f6c2.js"></script>
+    <link rel="stylesheet" href="stylesheets/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="a66cadcf-87f5-4d85-b7b9-ea340d1d1ebf";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light  sticky-top " style="background-color:rgba(0, 0, 0, 0.295);">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/Logo.png" height=30 class="logo-img" alt=""><Span>Startup Punjab</Span> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <% if(!currentUser){ %>
+            <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="/register" class="nav-link">Sign Up </a></li>
+       <% }else{  %>
+            <li class="nav-item"><a href="#" class="nav-link">Logged in as <%= currentUser.username%></a></li>
+            <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+
+       <% } %>
+      </ul>
+      
+    </div>
+    </div>
+  </nav>
+  <div class="container">
+        <%if(success && success.length>0){%>
+            <div class="alert alert-success">
+                <%= success%>
+            </div>
+            <%}%>
+        <%if(error && error.length>0){%>
+        <div class="alert alert-danger">
+            <%= error%>
+        </div>
+        <%}%>
+</div>
+<body>
+    
+
+
+
+   

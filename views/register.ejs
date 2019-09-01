@@ -1,0 +1,48 @@
+<% include ./partials/header %>
+
+    
+<div class="container">
+        <div class="row form-box mt-4">
+                <div class="col-md-4 form-left"></div>
+                <div class="col-md-8 text-center">
+                        
+                                <h1 class="form-title">Register Now</h1>
+                            <form class="text-center " method="POST" action="/register">
+                                <div class="form-row justify-content-center">
+                                    <div class="form-group col-md-10">
+                                    <input type="text" class="form-control" placeholder="Name" name="name" required>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="form-row justify-content-center">
+                                    <div class="form-group col-md-10">
+                                        <input type="text" class="form-control"  placeholder="Username " name="username" >
+                                        </div>
+                                    </div>
+                                <div class="form-row justify-content-center">
+                                    <div class="form-group col-md-10">
+                                        <input type="email" class="form-control" id="Email" placeholder="Email" name="email" required>
+                                        </div>
+                                    </div>
+                                    
+                                <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-10">
+                                            <input type="password" class="form-control" id="password" placeholder="password" name="password" required>
+                                        </div>
+                                    
+                                            
+                                </div>
+                                
+                                
+                                <button type="submit" class="btn btn-primary mb-2">Register</button>
+                                </form>
+                        
+                            
+                </div>
+            </div>
+
+</div>
+
+
+<%include ./partials/footer%>

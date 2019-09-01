@@ -1,0 +1,12 @@
+<%include partials/header%>
+<div class="container">
+    <h1>Schemes for Startups</h1>
+    <%allschemes.forEach(function(scheme){%>
+        <div class="scheme">
+            <h3><%=scheme.title %></h3>
+            <p><%=scheme.description %></p>
+            <a href="<%=scheme.link%>" class="btn btn-info btn-sm">Know More</a>
+        </div>
+        <%});%>
+</div>
+<%include partials/footer%>
